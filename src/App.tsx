@@ -19,7 +19,7 @@ const App = () => {
   }, []);
 
   return (
-    <div className="w-full min-h-screen lg:relative flex flex-col lg:flex-row">
+    <div>
       <MainContainer />
 
       {init && <ParticlesBackground />}

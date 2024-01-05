@@ -36,7 +36,7 @@ export const ExperienceContentItem: FunctionComponent<Experience> = ({
     >
       <>
         <p className="w-1/4 text-sm opacity-50 mt-1">{timeframe}</p>
-        <div className="w-3/4 flex flex-col">
+        <div className="w-4/6 flex flex-col">
           <h2 className="font-medium">{title}</h2>
           <h3 className="opacity-50 font-medium text-base">{subtitle}</h3>
           <p className="text-xs leading-5">{text}</p>
@@ -46,7 +46,7 @@ export const ExperienceContentItem: FunctionComponent<Experience> = ({
             ))}
           </div>
           {link && (
-            <div className="absolute bottom-4 right-4">
+            <div className="absolute bottom-4 right-2 lg:right-4">
               <OpenLinkIcon />
             </div>
           )}
@@ -79,11 +79,11 @@ export const ProjectContentItem: FunctionComponent<Project> = ({
     >
       <>
         <div className="flex justify-between">
-          <div className="w-1/4 mt-1 ml-3">
+          <div className="w-1/4 mt-1 ml-1 ml-3">
             <Logo />
           </div>
 
-          <div className="w-3/4 flex flex-col -ml-4">
+          <div className="w-4/6 flex flex-col -ml-4">
             <h2 className="text-base font-medium">{title}</h2>
             <p className="text-xs leading-5">{text}</p>
             <div className="flex flex-wrap gap-1 pt-2">
@@ -93,11 +93,11 @@ export const ProjectContentItem: FunctionComponent<Project> = ({
             </div>
 
             {link ? (
-              <div className="absolute bottom-4 right-4">
+              <div className="absolute bottom-4 right-2 lg:right-4">
                 <OpenLinkIcon />
               </div>
             ) : (
-              <div className="absolute bottom-4 right-4">
+              <div className="absolute bottom-4 right-2 lg:right-4">
                 <ExpandIcon />
               </div>
             )}

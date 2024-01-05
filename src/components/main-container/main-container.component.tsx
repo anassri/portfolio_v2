@@ -9,7 +9,7 @@ export const MainContainer: FunctionComponent = () => {
   >("ABOUT");
 
   return (
-    <>
+    <div className="w-full min-h-screen relative flex flex-col lg:justify-center lg:flex-row">
       <Header sectionInView={sectionInView} />
       <Body sectionInView={sectionInView} setSectionInView={setSectionInView} />
       <div className="block text-center lg:max-w-60 lg:text-left lg:hidden my-12">
@@ -23,6 +23,6 @@ export const MainContainer: FunctionComponent = () => {
         }}
       />
       <div className="fixed -z-20 bg-zinc-900 h-screen w-screen" />
-    </>
+    </div>
   );
 };

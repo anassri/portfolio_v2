@@ -37,7 +37,7 @@ export const Body: FunctionComponent<BodyProps> = ({
   }, [aboutInView, experienceInView, projectsInView]);
 
   return (
-    <div className="flex flex-col gap-y-6 items-center lg:w-1/2 lg:my-8">
+    <div className="flex flex-col gap-y-6 items-center lg:my-8">
       <div id="top" ref={aboutRef} />
       <About />
       {/* <div

@@ -23,8 +23,11 @@ export const Sticky: FunctionComponent<StickyProps> = ({
   unstuckClasses,
   unstuckStyles,
 }) => {
-  const [stuck, setStuck] = useState(false);
-  const [ref, inView] = useInView({ threshold: 1, rootMargin: "-50px 0px" });
+  const [stuck, setStuck] = useState(true);
+  const [ref, inView] = useInView({
+    threshold: 1,
+    rootMargin: "-50px 0px 50px 0px",
+  });
 
   const classes = stuck ? stuckClasses : unstuckClasses;
   const styles = stuck ? stuckStyles : unstuckStyles;
