@@ -4,7 +4,7 @@ I value contributing to open-source, which is why I'm making my portfolio websit
 
 React, TypeScript, tsParticles
 
-## Installation & Set Up
+## Installation & Set Up s
 
 ```sh
 npm install
