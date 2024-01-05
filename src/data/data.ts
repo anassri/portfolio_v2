@@ -90,7 +90,7 @@ export type Project = {
 export const projects: Project[] = [
   {
     title: "Listimo",
-    text: "A to-do list mobile app with a messaging feature. Listimo is designed to enable conversations and discussions over specific items within a list. Will be available on the App Store and Google Play",
+    text: "A to-do list mobile app with a messaging feature. Listimo is designed to enable conversations and discussions over specific items within a list. Will be available on the App Store and Google Play.",
     technologies: [
       "JavaScript",
       "TypeScript",
