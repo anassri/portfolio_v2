@@ -36,7 +36,7 @@ export const ExperienceContentItem: FunctionComponent<Experience> = ({
     >
       <>
         <p className="w-1/4 text-sm opacity-50 mt-1">{timeframe}</p>
-        <div className="w-4/6 flex flex-col">
+        <div className="w-4/6 lg:w-3/4 flex flex-col">
           <h2 className="font-medium">{title}</h2>
           <h3 className="opacity-50 font-medium text-base">{subtitle}</h3>
           <p className="text-xs leading-5">{text}</p>
@@ -83,7 +83,7 @@ export const ProjectContentItem: FunctionComponent<Project> = ({
             <Logo />
           </div>
 
-          <div className="w-4/6 flex flex-col -ml-4">
+          <div className="w-4/6 lg:w-3/4 flex flex-col -ml-4">
             <h2 className="text-base font-medium">{title}</h2>
             <p className="text-xs leading-5">{text}</p>
             <div className="flex flex-wrap gap-1 pt-2">

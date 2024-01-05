@@ -40,11 +40,6 @@ export const Body: FunctionComponent<BodyProps> = ({
     <div className="flex flex-col gap-y-6 items-center lg:my-8">
       <div id="top" ref={aboutRef} />
       <About />
-      {/* <div
-        className={`block lg:hidden text-gray ${
-          experienceInView ? "bg-zinc-900" : ""
-        } py-4 z-10 w-full text-center sticky top-0`}
-      > */}
       <Sticky
         position="top"
         unstuckClasses="block lg:hidden text-gray py-4 z-10 w-full text-center sticky top-0"
@@ -66,14 +61,6 @@ export const Body: FunctionComponent<BodyProps> = ({
         ))}
       </div>
       <div className="hidden lg:block border-b border-light-gray w-[32rem] my-6" />
-
-      {/* <div
-        className={`block lg:hidden text-gray ${
-          projectsInView ? "bg-zinc-900" : ""
-        } py-4 z-10 w-full text-center sticky top-0`}
-      >
-        PROJECTS
-      </div> */}
       <Sticky
         position="top"
         unstuckClasses="block lg:hidden text-gray py-4 z-10 w-full text-center sticky top-0"
