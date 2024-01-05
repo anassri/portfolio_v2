@@ -9,7 +9,7 @@ type HeaderProps = {
 
 export const Header: FunctionComponent<HeaderProps> = ({ sectionInView }) => {
   return (
-    <div className="p-12 flex lg:flex-col justify-center lg:justify-between lg:max-w-sm">
+    <div className="p-12 flex lg:flex-col justify-center lg:justify-between lg:w-1/3">
       <div className="lg:sticky lg:top-12">
         <div className="lg:pb-20">
           <LogoIcon />

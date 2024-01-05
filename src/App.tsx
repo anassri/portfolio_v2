@@ -19,11 +19,10 @@ const App = () => {
   }, []);
 
   return (
-    <div>
+    <>
       <MainContainer />
-
       {init && <ParticlesBackground />}
-    </div>
+    </>
   );
 };
 

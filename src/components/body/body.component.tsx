@@ -47,7 +47,6 @@ export const Body: FunctionComponent<BodyProps> = ({
       >
         EXPERIENCE
       </Sticky>
-      {/* </div> */}
       <div
         className="max-w-[35rem] flex flex-col gap-y-4 mx-4 lg:mx-0"
         id="experience"
@@ -78,6 +77,7 @@ export const Body: FunctionComponent<BodyProps> = ({
         ))}
       </div>
       <ClickableElement
+        ariaLabel="view full resume"
         onClick={() => openInNewTab(resume)}
         className="block lg:hidden text-gray py-4 hover:underline hover:text-regal-green transition duration-250 ease-in-out"
       >

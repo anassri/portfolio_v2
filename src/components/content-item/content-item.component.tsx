@@ -30,28 +30,29 @@ export const ExperienceContentItem: FunctionComponent<Experience> = ({
 }) => {
   return (
     <MaybeClickable
-      className="flex justify-between text-dark-gray bg-light-gray opacity-100 lg:opacity-75 hover:opacity-100 p-4 rounded-lg relative transition duration-250 ease-in-out"
+      ariaLabel={`view build.com in a new tab`}
+      className="flex text-dark-gray bg-light-gray opacity-100 lg:opacity-75 hover:opacity-100 p-4 rounded-lg relative transition duration-250 ease-in-out"
       link={link}
       onClick={() => openInNewTab(link || "")}
     >
-      <>
-        <p className="w-1/4 text-sm opacity-50 mt-1">{timeframe}</p>
-        <div className="w-4/6 lg:w-3/4 flex flex-col">
+      <div className="flex flex-col">
+        <div className="flex justify-between">
           <h2 className="font-medium">{title}</h2>
-          <h3 className="opacity-50 font-medium text-base">{subtitle}</h3>
-          <p className="text-xs leading-5">{text}</p>
-          <div className="flex flex-wrap gap-1 pt-2">
-            {technologies.map((label) => (
-              <TechnologyPill label={label} key={label} />
-            ))}
-          </div>
-          {link && (
-            <div className="absolute bottom-4 right-2 lg:right-4">
-              <OpenLinkIcon />
-            </div>
-          )}
+          <p className="text-sm opacity-50 mt-1">{timeframe}</p>
         </div>
-      </>
+        <h3 className="opacity-50 font-medium text-base">{subtitle}</h3>
+        <p className="text-xs leading-5">{text}</p>
+        <div className="flex flex-wrap gap-1 pt-2 pr-2 lg:pr-0">
+          {technologies.map((label) => (
+            <TechnologyPill label={label} key={label} />
+          ))}
+        </div>
+        {link && (
+          <div className="absolute bottom-4 right-4">
+            <OpenLinkIcon />
+          </div>
+        )}
+      </div>
     </MaybeClickable>
   );
 };
@@ -70,7 +71,8 @@ export const ProjectContentItem: FunctionComponent<Project> = ({
   };
   return (
     <ClickableElement
-      className="flex flex-col items-center text-dark-gray bg-light-gray opacity-100 lg:opacity-75 hover:opacity-100 p-4 rounded-lg relative transition duration-250 ease-in-out"
+      ariaLabel="expand listimo card"
+      className="flex flex-col items-center text-dark-gray bg-light-gray opacity-100 lg:opacity-75 hover:opacity-100 py-4 pr-4 rounded-lg relative transition duration-250 ease-in-out"
       onClick={
         title === "Listimo"
           ? toggleCardExpansion
@@ -79,25 +81,25 @@ export const ProjectContentItem: FunctionComponent<Project> = ({
     >
       <>
         <div className="flex justify-between">
-          <div className="w-1/4 mt-1 ml-1 ml-3">
+          <div className="w-2/6 lg:w-1/4 mt-1 flex justify-center">
             <Logo />
           </div>
 
           <div className="w-4/6 lg:w-3/4 flex flex-col -ml-4">
             <h2 className="text-base font-medium">{title}</h2>
             <p className="text-xs leading-5">{text}</p>
-            <div className="flex flex-wrap gap-1 pt-2">
+            <div className="flex flex-wrap gap-1 pt-2 pr-2 lg:pr-0">
               {technologies.map((label) => (
                 <TechnologyPill label={label} key={label} />
               ))}
             </div>
 
             {link ? (
-              <div className="absolute bottom-4 right-2 lg:right-4">
+              <div className="absolute bottom-4 right-4">
                 <OpenLinkIcon />
               </div>
             ) : (
-              <div className="absolute bottom-4 right-2 lg:right-4">
+              <div className="absolute bottom-4 right-4">
                 <ExpandIcon />
               </div>
             )}

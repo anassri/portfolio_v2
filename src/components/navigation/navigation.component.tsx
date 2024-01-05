@@ -16,6 +16,7 @@ const NavigationButton: FunctionComponent<NavigationButtonProps> = ({
 }) => {
   return (
     <ClickableElement
+      ariaLabel={text}
       onClick={onClick}
       className={`${
         isActive
