@@ -5,7 +5,7 @@ export const About: FunctionComponent = () => {
     <div className="flex flex-col gap-y-4 max-w-[35rem] text-gray leading-7 opacity-95 mx-4 lg:mx-0">
       <p>
         Hey there! My name is <b>Ammar Nassri</b>. I'm a software engineer with
-        a <b>Computer Engineering </b> degree, a master's in <b>Animation </b>,
+        a <b>Computer Engineering </b> degree, a master's in <b>Animation</b>,
         and a <b>web development </b>
         bootcamp background. In 2020, I dove into web development to craft tech
         that adds some sunshine to life.
