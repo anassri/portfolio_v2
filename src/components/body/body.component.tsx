@@ -25,7 +25,6 @@ export const Body: FunctionComponent<BodyProps> = ({
   const [projectsRef, projectsInView] = useInView({ threshold: 0.5 });
 
   useEffect(() => {
-    console.log(aboutInView, experienceInView, projectsInView);
     if (aboutInView) {
       setSectionInView("ABOUT");
     } else if (experienceInView && sectionInView !== "EXPERIENCE") {
