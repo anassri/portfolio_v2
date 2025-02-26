@@ -8,7 +8,7 @@ import {
     ExperienceContentItem,
     ProjectContentItem,
 } from "../content-item/content-item.component";
-import resume from "../downloadable/ANassri_Resume_24.pdf";
+import resume from "../downloadable/ANassri_Resume_25.pdf";
 import { Sticky } from "../sticky/sticky.component";
 
 type BodyProps = {
