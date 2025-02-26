@@ -1,7 +1,7 @@
 import { FunctionComponent } from "react";
 import { openInNewTab, scrollToElement } from "../../utils/general.utils";
 import { ClickableElement } from "../clickable-element/clickable-element.component";
-import resume from "../downloadable/ANassri_Resume_24.pdf";
+import resume from "../downloadable/ANassri_Resume_25.pdf";
 
 type NavigationButtonProps = {
     text: string;
